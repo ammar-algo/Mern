@@ -22,6 +22,7 @@ const useStyles = makeStyles({
     // animation:`$load 5000ms ease-in-out`,
     paddingTop: "25px ",
     paddingRight: "0px",
+    display: "flex", 
   },
 
   left_container: {
@@ -82,6 +83,13 @@ const useStyles = makeStyles({
   shop_link:{
     textDecoration:"none",
   },
+  right_container:{
+    border:"1px solid black",
+    width:"400px",
+    marginLeft:"100px",
+
+  }
+
 
 });
 

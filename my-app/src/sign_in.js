@@ -7,12 +7,12 @@ import { BsPerson } from "react-icons/bs";
 const useStyles = makeStyles({
   root: {
     width: "200px",
-    marginLeft: "500px",
+    marginLeft: "100px",
     display: "flex",
-    width: "120px",
+    width: "70px",
     height: "50px",
-    marginTop: "-45px",
-    border: "none",
+    marginTop: "0px",
+    border: "1px solid black",
   },
 
   user: {
@@ -22,9 +22,9 @@ const useStyles = makeStyles({
     marginTop: "17px",
   },
 
-  hello: { color: "white" },
+  hello: { color: "white", border: "1px solid black", },
 
-  login_link: { border:'0.5px', marginTop:'17px' ,color:'black',
+  login_link: { border:'1px solid black', marginTop:'17px' ,color:'black',
 fontSize:'20px',
 },
 

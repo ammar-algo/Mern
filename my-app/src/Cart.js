@@ -7,14 +7,15 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
     root:{
-                marginLeft:'900px',
-               marginTop:'5px',
+              
+              
                 display:'flex',
                 top:"0px",
-            
-                width:"60px",
-                height:"40px",
-                border: "none",
+                marginTop:"7px",
+                  marginLeft:'350px',
+                width:"48px",
+                height:"25px",
+                border: "1px solid black",
                 // '&:hover': {
                 //   border:" 1px solid white",
                 // },
@@ -22,21 +23,23 @@ const useStyles = makeStyles({
     },
 
     icon: {
-     color:'white',
-     marginLeft:"0px",
-     marginTop:"10px",
-    
-     width:"100px",
+     color:'#000000',
+    height:"23px",
+     marginTop:"0px",
+    border:"1px solid black",
+     width:"23px",
     
     },
     count:{
-            marginTop:'0px', 
-            color:'white',
+            marginTop:'3px', 
+            color:'#000000',
             textDecoration:'none',
             margin: "0px",
-           
-            width:"5px", 
-            padding:"10px"
+            border:"1px solid black",
+            width:" 15px", 
+            paddingLeft:"4px",
+            height:"20px",
+            //marginLeft:"2px",
     },
     checkout_link:{
       textDecoration:"none"
