@@ -1,11 +1,12 @@
 import React,{useState} from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import { useSelector, useDispatch } from "react-redux";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import { sign_in_saga,getUser,setUser} from "./redux/actions";
 import {useHistory}  from 'react-router-dom';
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { Button } from 'antd';
 
 
 
@@ -13,8 +14,7 @@ import axios from "axios";
 
 
 
-
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) =>({
     root: {
         width:"450px", 
         border: " 1px solid black",
@@ -66,12 +66,19 @@ const useStyles = makeStyles({
     },
 
     signInButton: {
-        backgroundColor: "#FF9900",
-        color: "#000000",
+    //    backgroundColor: "#000",
+        color:"white", 
         marginLeft: 12,
         fontSize: "10px",
         marginTop:"10px",
         marginLeft:"150px",
+        [theme.breakpoints.down("lg")]: {
+            backgroundColor: "#000000",
+        },
+        [theme.breakpoints.up("lg")]: {
+            backgroundColor: "#FF9900",
+        },
+          
       },
       container:{
          
@@ -89,7 +96,7 @@ const useStyles = makeStyles({
         marginTop:"30px",
         marginLeft:"150px",
       }
-});
+}));
 
 
 function Login_page() {
