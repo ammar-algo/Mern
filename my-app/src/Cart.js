@@ -3,6 +3,9 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { makeStyles } from '@material-ui/core/styles';
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { StarOutlined, StarFilled, StarTwoTone,ShoppingCartOutlined  } from '@ant-design/icons';
+import { GiShoppingCart } from "react-icons/gi";
+
 
 
 const useStyles = makeStyles({
@@ -11,11 +14,11 @@ const useStyles = makeStyles({
               
                 display:'flex',
                 top:"0px",
-                marginTop:"7px",
+                marginTop:"12px",
                   marginLeft:'350px',
                 width:"48px",
                 height:"25px",
-                border: "1px solid black",
+                // border: "1px solid black",
                 // '&:hover': {
                 //   border:" 1px solid white",
                 // },
@@ -24,10 +27,14 @@ const useStyles = makeStyles({
 
     icon: {
      color:'#000000',
-    height:"23px",
+    // height:"23px",
      marginTop:"0px",
-    border:"1px solid black",
+    // border:"1px solid black",
+    fontWeight:50,
      width:"23px",
+     fontSize: "1.5rem",
+     fontFamily: "Work Sans, sans-serif",
+
     
     },
     count:{
@@ -35,7 +42,10 @@ const useStyles = makeStyles({
             color:'#000000',
             textDecoration:'none',
             margin: "0px",
-            border:"1px solid black",
+            fontSize: "16px",
+            fontFamily: "Work Sans, sans-serif",
+
+            // border:"1px solid black",
             width:" 15px", 
             paddingLeft:"4px",
             height:"20px",
@@ -68,7 +78,7 @@ function Cart() {
             
            <span className={classes.icon}>
                
-                <AddShoppingCartIcon/>
+           <GiShoppingCart/>
              </span> 
           
           

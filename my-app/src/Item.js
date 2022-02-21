@@ -34,10 +34,14 @@ const useStyles = makeStyles({
   },
 
   cart: {
-    backgroundColor: "#FF9900",
+    backgroundColor: "#FCB800",
     color: "#000000",
     marginLeft: 102,
     fontSize: "10px",
+    '&:hover': {
+      backgroundColor: '#FCB800',
+     
+    },
   },
 
   price: { marginLeft: 92, fontSize: "15px" },

@@ -35,13 +35,27 @@ const useStyles = makeStyles({
     // paddingTop:"5px",
     // paddingBottom:"5px",
   },
+  sign_out_container:{
+    // border:"1px solid black",
+    marginLeft:"380px",
+  },
 
   sign_out: {
-    backgroundColor: "#FF9900",
-    marginLeft: 12,
-    fontSize: "10px",
-    marginTop: "-50px",
-    marginLeft: "1380px",
+    backgroundColor: "#000000",
+    fontFamily: "Work Sans, sans-serif",
+        fontWeight: 600,
+    marginLeft: 0,
+    fontSize: "12px",
+    marginTop: "18px",
+    // marginLeft: "1380px",
+    color:'#FFFFFF',
+    width:"80px",
+    height:"20px",
+    borderRadius: 0,
+    '&:hover': {
+      backgroundColor: '#000000',
+     
+    },
   },
   home_link:{
     textDecoration:"none",
@@ -84,7 +98,7 @@ const useStyles = makeStyles({
     textDecoration:"none",
   },
   right_container:{
-    border:"1px solid black",
+    // border:"1px solid black",
     width:"400px",
     marginLeft:"100px",
 
@@ -125,12 +139,15 @@ function Header() {
       <div className={classes.right_container}>
         <Cart />
         <Sign_in />
-        {userLoggedIn ? (
-          <Button className={classes.sign_out} size="small" onClick={logout}>
+       </div>
+       {/**signout */}
+       <div className={classes.sign_out_container}>
+       {userLoggedIn ? (
+          <Button className={classes.sign_out}  onClick={logout}>
             Sign out
           </Button>
         ) : null}
-      </div>
+       </div>
     </div>
   );
 }

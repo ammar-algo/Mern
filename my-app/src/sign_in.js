@@ -7,12 +7,13 @@ import { BsPerson } from "react-icons/bs";
 const useStyles = makeStyles({
   root: {
     width: "200px",
-    marginLeft: "100px",
+    marginLeft: "0px",
     display: "flex",
     width: "70px",
-    height: "50px",
-    marginTop: "0px",
-    border: "1px solid black",
+    height: "23px",
+    marginTop: "-25px",
+    // border: "1px solid black",
+    
   },
 
   user: {
@@ -22,13 +23,17 @@ const useStyles = makeStyles({
     marginTop: "17px",
   },
 
-  hello: { color: "white", border: "1px solid black", },
+  hello: { color: "#000000", marginTop:"3px",height:"20px",    fontSize: "16px",    fontFamily: "Work Sans, sans-serif",
 
-  login_link: { border:'1px solid black', marginTop:'17px' ,color:'black',
-fontSize:'20px',
 },
 
-  current_user: { color: "white", marginLeft: "12px" },
+  login_link: { marginTop:'3px' ,color:'#000000',
+fontSize:'20px', height:'20px',
+// border:"1px solid black"
+},
+
+  current_user: { color: "#000000", marginLeft: "12px",height:'20px',
+marginTop:'3px', fontFamily: "Work Sans, sans-serif",},
 });
 
 function Sign_in() {

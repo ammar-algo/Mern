@@ -48,7 +48,7 @@ function App() {
   return (
     <div >
       <Router>
-        <Header />
+        {localStorage.getItem('user_details')?<Header />:null}
 
 
 
