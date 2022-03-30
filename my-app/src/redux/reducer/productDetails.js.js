@@ -46,8 +46,8 @@ export const productDetails = (state = initialState, actions) => {
       return { details: [...state.details], header: "delete" };
     case "addDetails":
       console.log("initial state", state.details);
-      var item = actions.data;
-      //console.log('item', item)
+      var item = actions.data.data;
+      console.log('item', item)
       //var total = state.details.length + 1;
       //console.log("total", total);
       //item.id = total;
@@ -56,7 +56,7 @@ export const productDetails = (state = initialState, actions) => {
       console.log("det", det);
       //   var newItemsAdded =
       //  console.log('final', newItemsAdded)
-      return { ...state, details: [...det, item], header: "added" };
+      return { ...state, details: [...det, item] };
 
 
     

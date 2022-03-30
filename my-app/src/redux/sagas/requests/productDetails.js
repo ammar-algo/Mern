@@ -22,8 +22,8 @@ export function requestCreateProduct(data) {
   console.log("data going to api post create", data);
   return axios.request({
     method: "post",
-    url: `http://localhost:3000/api/v1/products`,
-    params: { image: data.image, price: data.price, ratings: data.rating },
+    url: `http://localhost:8081/products/list`,
+    data: { image: data.image, price: data.price},
     headers: {
       Authorization: `Bearer ${localStorage.getItem("authorization")}`,
     },

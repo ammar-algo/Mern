@@ -44,7 +44,7 @@ function Product() {
         rating={i.ratings}
       />
     </div>
-  ));
+  ))
   return (
     <div>
       <div className={classes.root}>
@@ -54,7 +54,7 @@ function Product() {
       </div>
       {userRole == true ? (
         <div className={classes.add_product}>
-          <Entry />
+          {/* <Entry /> */}
         </div>
       ) : null}
     </div>
